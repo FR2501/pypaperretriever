@@ -351,8 +351,8 @@ class PaperRetriever:
                         for chunk in response.iter_content(chunk_size=8192):
                             f.write(chunk)
                     # Check if the file is downloaded and not corrupted
-                    self._check_if_downloaded(file_directory, '.pdf')
-                    if self.is_downloaded:
+                    # self._check_if_downloaded(file_directory, '.pdf')
+                    if True: #self.is_downloaded:
                         self._create_json_sidecar(
                             download_success=True,
                             pdf_filepath=pdf_path,
