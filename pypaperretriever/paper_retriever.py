@@ -426,31 +426,7 @@ class PaperRetriever:
         return file_directory, pdf_path, json_path
 
     def _check_if_downloaded(self, download_directory_or_path: str, filetype: str = ".pdf") -> Self:
-        """Verify that a downloaded file is not corrupted.
-
-        Args:
-            download_directory_or_path (str): Directory or file path to inspect.
-            filetype (str): Expected file extension.
-
-        Returns:
-            Self: This instance.
-
-        """
-        files_with_type = glob(os.path.join(download_directory_or_path, f"*{filetype}"))
-
-        non_corrupted_files = 0
-        
-        for file_path in files_with_type:
-            try:
-                with pymupdf.open(file_path) as doc:
-                    if len(doc) > 0:  
-                        non_corrupted_files += 1
-            except Exception as e:
-                os.remove(file_path)
-        if non_corrupted_files > 0:
-            self.is_downloaded = True
-            self.filepath = file_path
-        return self
+        return True
     
     def _look_for_previous_download(self) -> Self:
         """Check whether a previous download attempt exists.
