@@ -13,7 +13,7 @@
 ### Installation
     
 ```bash
-pip install git+https://github.com/josephisaacturner/pypaperretriever.git
+pip install git+https://github.com/FR2501/pypaperretriever.git
 ```
 
 ### Features
