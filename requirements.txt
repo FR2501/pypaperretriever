@@ -2,7 +2,7 @@ pandas==2.2.3
 setuptools==75.8.0
 numpy~=1.26
 tqdm==4.64.1
-biopython==1.83
+biopython>=1.83
 lxml==5.2.0
 requests==2.31.0
 PyMuPDF~=1.26
