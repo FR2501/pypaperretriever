@@ -296,7 +296,7 @@ class PaperRetriever:
             time.sleep(random.randint(1, 3)) # Delay between requests, avoids being blocked
             headers = {
                 "User-Agent": random.choice(self.user_agents),
-                "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
+                "Accept": "application/pdf,text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
                 "Accept-Language": "en-US,en;q=0.9",
                 "Referer": "https://www.google.com/",
             }
