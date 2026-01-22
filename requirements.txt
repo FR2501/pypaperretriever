@@ -5,7 +5,7 @@ tqdm==4.64.1
 biopython==1.83
 lxml==5.2.0
 requests==2.31.0
-PyMuPDF==1.24.1
+PyMuPDF~=1.26
 pdf2image==1.17.0
 pytest==8.3.4
 beautifulsoup4==4.12.3
