@@ -85,7 +85,8 @@ class PaperRetriever:
                 return self
         
         self.check_open_access()
-        self.check_pubmed_central_access()
+        # Disabled, as the pubmed search seems very unstable
+        # self.check_pubmed_central_access()
         self.check_crossref_access(decode_doi(self.doi))
         if len(self.pdf_urls) > 0:
             print("[PyPaperRetriever] Found Open-Access PDF link(s). Attempting download...")
